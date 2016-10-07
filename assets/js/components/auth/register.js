@@ -60,12 +60,8 @@ class Register extends Component {
                 {this.renderAlert()}
                 <div className="row">
                     <div className="col-md-6">
-                        <label>First Name</label>
-                        <Field name="firstName" className="form-control" component={renderField} type="text" />
-                    </div>
-                    <div className="col-md-6">
-                        <label>Last Name</label>
-                        <Field name="lastName" className="form-control" component={renderField} type="text" />
+                        <label>Username</label>
+                        <Field name="username" className="form-control" component={renderField} type="text" />
                     </div>
                 </div>
                 <div className="row">

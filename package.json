@@ -42,7 +42,16 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "axios" : "latest",
-    "redux-form" : "latest"
+    "redux-form" : "latest",
+    "sails-mysql" : "latest",
+    "bcrypt": "latest",
+    "passport": "latest",
+    "passport-local": "latest",
+    "passport-jwt" : "latest",
+    "jsonwebtoken" : "latest",
+    "crypto" : "latest",
+    "waterline" : "latest"
+
 
   },
   "scripts": {

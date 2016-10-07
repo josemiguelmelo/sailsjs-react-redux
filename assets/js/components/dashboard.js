@@ -22,7 +22,7 @@ class Dashboard extends Component {
         return (
             <div>
                 {this.renderContent()}
-            </div>
+           </div>
         );
     }
 }

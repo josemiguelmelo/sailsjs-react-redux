@@ -33,13 +33,13 @@ export function errorHandler(dispatch, error, type) {
     }
 }
 
-export function loginUser({ email, password }) {
+export function loginUser({ username, password }) {
     return function(dispatch) {
-        axios.post(`${API_URL}/auth/login`, { email, password })
+        axios.post('/auth/login', { username, password })
             .then(response => {
                 cookie.save('token', response.data.token, { path: '/' });
                 dispatch({ type: AUTH_USER });
-                window.location.href = CLIENT_ROOT_URL + '/dashboard';
+                window.location.href = '/dashboard';
             })
             .catch((error) => {
                 errorHandler(dispatch, error.response, AUTH_ERROR)
@@ -47,13 +47,13 @@ export function loginUser({ email, password }) {
     }
 }
 
-export function registerUser({ email, firstName, lastName, password }) {
+export function registerUser({ email, username, password }) {
     return function(dispatch) {
-        axios.post(`${API_URL}/auth/register`, { email, firstName, lastName, password })
+        axios.post('/auth/register', { email, username, password })
             .then(response => {
                 cookie.save('token', response.data.token, { path: '/' });
                 dispatch({ type: AUTH_USER });
-                window.location.href = CLIENT_ROOT_URL + '/dashboard';
+                window.location.href = '/dashboard';
             })
             .catch((error) => {
                 errorHandler(dispatch, error.response, AUTH_ERROR)
@@ -66,13 +66,13 @@ export function logoutUser() {
         dispatch({ type: UNAUTH_USER });
         cookie.remove('token', { path: '/' });
 
-        window.location.href = CLIENT_ROOT_URL + '/login';
+        window.location.href = '/login';
     }
 }
 
 export function protectedTest() {
     return function(dispatch) {
-        axios.get(`${API_URL}/protected`, {
+        axios.get('${API_URL}/protected', {
             headers: { 'Authorization': cookie.load('token') }
         })
             .then(response => {

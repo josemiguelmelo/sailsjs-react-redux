@@ -32,6 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
+  'post /auth/login' : 'AuthController.login',
+  'post /auth/register' : 'AuthController.register',
+
   '/*' : {
     fn: function(req, res) {res.render('homepage');},
     skipAssets: true
