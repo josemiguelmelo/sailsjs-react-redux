@@ -29,6 +29,7 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
     "react-router-redux": "^4.0.5",
+    "react-cookie" : "latest",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
     "copy-webpack-plugin" : "latest",
@@ -39,7 +40,9 @@
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "babel-preset-stage-0": "^6.3.13"
+    "babel-preset-stage-0": "^6.3.13",
+    "axios" : "latest",
+    "redux-form" : "latest"
 
   },
   "scripts": {
