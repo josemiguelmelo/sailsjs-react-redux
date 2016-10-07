@@ -8,8 +8,8 @@ import HomePage from './components/pages/home-page';
 import Register from './components/auth/register';
 import Login from './components/auth/login';
 import Dashboard from './components/dashboard';
-import RequireAuth from './components/auth/require-auth';
-import AlreadyAuth from './components/auth/already-auth';
+import RequireAuth from './components/auth/checkers/require-auth';
+import AlreadyAuth from './components/auth/checkers/already-auth';
 
 export default (
     <Route path="/" component={App}>

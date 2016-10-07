@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import cookie from 'react-cookie';
-import LogoutButton from './auth/logoutButton';
-import LoginButton from './auth/loginButton';
+import LogoutButton from './auth/buttons/logoutButton';
+import LoginButton from './auth/buttons/loginButton';
 
 class App extends Component {
 
