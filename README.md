@@ -1,6 +1,6 @@
 # sailsjs-react-redux
 
-A default template for an app using SailsJS with React and Redux.
+A default architecture for an app with **authentication** using SailsJS with React and Redux. 
 
 ## Installation
 
